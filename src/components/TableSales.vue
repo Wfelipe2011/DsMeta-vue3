@@ -15,11 +15,11 @@
 <template>
   <table class="my-6 w-full">
     <tr class="border-b border-gray-400 text-gray-300">
-      <th class="invisible lg:visible">Id</th>
-      <th class="invisible md:visible">Data</th>
+      <th class="hidden lg:table-cell">Id</th>
+      <th class="hidden md:table-cell">Data</th>
       <th>Vendedor</th>
-      <th class="invisible lg:visible">Visitas</th>
-      <th class="invisible lg:visible">Vendas</th>
+      <th class="hidden lg:table-cell">Visitas</th>
+      <th class="hidden lg:table-cell">Vendas</th>
       <th>Total</th>
       <th>Notificar</th>
     </tr>
@@ -28,11 +28,11 @@
       :key="product.id"
       class="border-b border-gray-600 text-gray-300"
     >
-      <td class="invisible lg:visible">{{ product.id }}</td>
-      <td class="invisible md:visible">{{ product.date }}</td>
+      <td class="hidden lg:table-cell">{{ product.id }}</td>
+      <td class="hidden md:table-cell">{{ product.date }}</td>
       <td>{{ product.seller }}</td>
-      <td class="invisible lg:visible">{{ product.visits }}</td>
-      <td class="invisible lg:visible">{{ product.sales }}</td>
+      <td class="hidden lg:table-cell">{{ product.visits }}</td>
+      <td class="hidden lg:table-cell">{{ product.sales }}</td>
       <td>{{ product.total }}</td>
       <td class="flex justify-center">
         <button class="rounded-md border border-[#FF6B72] p-2 brightness-75 hover:brightness-100">
